@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "./",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=true SSL_CRT_FILE=/etc/letsencrypt/live/bot.shinoa.tech/cert.pem SSL_KEY_FILE=/etc/letsencrypt/live/bot.shinoa.tech/privkey.pem react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "vk-miniapps-deploy"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
